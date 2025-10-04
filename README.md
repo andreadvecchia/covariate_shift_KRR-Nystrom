@@ -24,7 +24,7 @@ Three models:
 
 The project includes both a clean **Jupyter notebook** and an **installable Python package** with a CLI.
 
-![plot data](docs/plotdata_3d.png)
+![plot data](docs/shift_plot.png)
 
 
   
