@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/covshift/__init__.py
+src/covshift/bless.py
+src/covshift/core.py
+src/covshift/plot.py
+src/covshift_correct.egg-info/PKG-INFO
+src/covshift_correct.egg-info/SOURCES.txt
+src/covshift_correct.egg-info/dependency_links.txt
+src/covshift_correct.egg-info/entry_points.txt
+src/covshift_correct.egg-info/requires.txt
+src/covshift_correct.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+covshift-compare = covshift.core:cli_compare

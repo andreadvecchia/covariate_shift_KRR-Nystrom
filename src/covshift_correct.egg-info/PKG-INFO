@@ -1,0 +1,65 @@
+Metadata-Version: 2.4
+Name: covshift-correct
+Version: 0.1.0
+Summary: Minimal reproducible baseline for KRR under covariate shift (with IW and Nyström variants).
+Author: Andrea Della Vecchia
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.23
+Requires-Dist: pandas>=2.0
+Requires-Dist: scikit-learn>=1.3
+Requires-Dist: scipy>=1.10
+Provides-Extra: plot
+Requires-Dist: matplotlib>=3.7; extra == "plot"
+Dynamic: license-file
+
+# covshift-correct
+
+Minimal, academic-friendly repo that reproduces Kernel Ridge Regression (KRR) baselines under **covariate shift**, comparing:
+
+- **KRR** (vanilla)
+- **IW–KRR** (importance-weighted)
+- **IW–Nyström KRR** (importance-weighted with Nyström compression via BLESS)
+
+> Extracted from a notebook and distilled into a tiny, well-structured package.
+
+## Install
+
+```bash
+pip install -e .
+# (optional for 3D plot) 
+pip install -e .[plot]
+```
+
+## Quick run
+
+Use the console entry-point to run a short comparison with cross-validated hyperparameters and 5 random seeds:
+
+```bash
+covshift-compare
+```
+
+or directly:
+
+```bash
+python scripts/compare_models.py
+```
+
+## Package layout
+
+```
+src/covshift/
+  __init__.py
+  core.py      # config, sampling, models, CV, training, CLI
+  plot.py      # optional 3D visualization (requires matplotlib)
+  bless.py     # lightweight BLESS routine (vendored)
+scripts/
+  compare_models.py  # calls into covshift.core
+```
+
+## Notes
+
+- Defaults mirror the original notebook (2D Gaussian train/test with shift).
+- Keeps file count and surface area small.
+- Plotting is optional and guarded behind an extra.
