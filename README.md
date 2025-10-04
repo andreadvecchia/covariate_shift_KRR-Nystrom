@@ -5,7 +5,7 @@ Code accompanying the work:
 **Computational Efficiency under Covariate Shift in Kernel Ridge Regression**
 A. Della Vecchia, A. Watusadisi, E. De Vito, L. Rosasco  (NeurIPS 2025 - Spotlight Session)
 
-📄 [Paper (PDF)](docs/DellaVecchia_covshift.pdf)
+📄 [Paper (PDF)](docs/DellaVecchia_CovShift.pdf)
 🔗 [Google Scholar](https://scholar.google.it/citations?view_op=view_citation&hl=it&user=aaeUheEAAAAJ&citation_for_view=aaeUheEAAAAJ:IjCSPb-OGe4C)
 
 The goal is to study **covariate shift**—the setting where train and test input distributions differ while the conditional distribution (and then also the target regression function) remains the same —and to evaluate **importance-weighted** Kernel Ridge Regression (KRR) alongside its **Nyström** efficient and scalable approximation.
